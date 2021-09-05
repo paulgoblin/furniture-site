@@ -1,0 +1,141 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}	
+
+body, html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif;
+	background-color: #fff;
+	color: #222222;
+	line-height: 1.5em;
+}
+
+/* link scheme */
+/* you can customize links further down the page too */
+a:link { text-decoration: none; color: #222222; }
+a:active { text-decoration: none; color: #222222; }
+a:visited { text-decoration: none; color: #222222; }
+a:hover { text-decoration: none; }
+
+/* headings */
+h1 { font-size: 22px; margin-top: 0em; margin-bottom: 1.2em;}
+h2 { font-size: 14px; margin-bottom: 1em; margin-top: 0em; color: #222222; font-weight:bold;}
+h3 { font-size: 13px; margin-bottom: 1em; }
+h4 { font-size: 13px; margin-bottom: 1em; }
+p {font-size: 14px; line-height:1.3em; color: #333333;}
+
+/*remove padding from something*/
+#nopad{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+/*getting our box sized right*/
+
+@media (min-width: 992px) {
+#index  {
+	width:9em;
+	height:100%;
+	float:left;	
+	padding-top:2em;
+	position:fixed;
+}
+
+#exhibit {
+	width: calc(100% - 9em);
+	height:100%;
+	float:right;
+}
+
+  /*right align only in desktop display*/
+#index  ul,h1 {
+	text-align:right;
+}
+}
+
+@media (max-width: 992px) {
+#index  {	
+	width:100%;
+	height:9.5em;
+}
+
+#exhibit {
+	height: calc(100% - 9.5em); 
+	width:100%;
+}
+}
+
+
+/* Index formatting */
+#index  div {
+	margin-top:1em;
+}
+
+/* front page display */
+#window {
+	height:100%;
+	width:100%;
+	white-space:nowrap;
+	overflow:scroll;
+	overflow-y:hidden;
+	background-color: #ffffff;
+	padding-left:1em;
+}
+#window img {
+	height:90%;
+    position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	padding-right:1em;
+}
+
+/*page display*/
+#cover{
+	width:75%;
+	height:100%;
+	margin:auto;
+}
+#cover img {
+	width: 100%;
+	float:left;
+	padding:10px;
+	padding-top:4em;
+}
+
+#content{
+	
+	width: 75%;
+	margin:auto;
+}
+#content img {
+	width: 100%;
+	float:left;
+	padding:10px;
+	padding-bottom:4em;
+}
+#textbox{
+	width:40%;
+	padding:15px;
+	padding-bottom:4em;
+}
+#gfy{
+	width:70%;
+	position:relative;
+	margin:auto;
+	padding:10px;
+	padding-bottom:4em;
+	padding-top:3em;
+}
+#gfybig{
+	position:relative;
+	padding-top:7em;
+	right:10%;
+	width:120%;
+}

@@ -1,0 +1,269 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif;
+	background-color: #fff;
+	color: #111111;
+	line-height: 1.5em;
+}
+
+
+
+/* link scheme */
+/* you can customize links further down the page too */
+a:link { text-decoration: none; color: #111111; }
+a:active { text-decoration: none; color: #111111; }
+a:visited { text-decoration: none; color: #111111; }
+a:hover { text-decoration: none; }
+
+/* headings */
+h1 { font-size: 22px; margin-top: 0em; margin-bottom: 1.2em;}
+h2 { font-size: 14px; padding-bottom: 3em; margin-top: 0em; color: #333333; font-weight:bold;}
+h3 { font-size: 14px; margin-bottom: 0em; padding-top: 0em; color: #333333; font-style:italic; padding-left:0em; text-align:left;}
+h4 { font-size: 14px;  padding-top:1em; padding-right:0em; font-style:italic; color: #333333; margin-bottom:1em; text-align:left ;}
+p {font-size: 12px; line-height:2em; color: #333333;}
+
+/*remove padding from something*/
+#nopad{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#cover {
+  position: relative;
+  height: 100%;
+}
+
+
+/*getting our box sized right*/
+/*DESKTOP*/
+@media (min-width: 992px) {
+
+#bigbox{
+	padding:0 3em 0 3em;
+	width:100%;
+}
+#index  {
+	width:9em;
+	height:100%;
+	float:right;
+	padding-top:1em;
+}
+
+#exhibit {
+	width: calc(100% - 9em);
+  min-height: 100%;
+	margin:0;
+  position: relative;
+}
+#exhibit2 {
+	width: calc(100% - 9em);
+	margin:0;
+}
+
+#exhibit img {
+	width: 100%;
+	padding-top:2em;
+}
+
+#homepage{
+	padding: 0 3em 0 3em;
+	width: 100%;
+	float: left;
+}
+
+  /*right align only in desktop display*/
+#index  ul,h1 {
+	text-align:right;
+}
+
+	/*Desktop front page display */
+#window {
+	height:95%;
+	padding-top:2em;
+	width:100%;
+	white-space:nowrap;
+	overflow:scroll;
+  direction:rtl;
+	overflow-y:hidden;
+	background-color: #ffffff;
+}
+#window img {
+	height:100%;
+	width:auto;
+  position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	padding-left:1em;
+	padding-top:0;
+}
+
+}
+
+/*MOBILE*/
+@media (max-width: 992px) {
+
+#title h1{
+  font-size: 20;
+}
+
+#bigbox{
+	padding:0 2em 0 2em;
+	width:100%;
+}
+
+#homepage{
+	padding:0 2em 0 2em;
+	width:100%;
+	background: url("./images/mobileBackground.jpg");
+	background-size: 100%;
+}
+
+#index  {
+	width:95%;
+	height:14em;
+	padding-top:2em;
+	display:block;
+	margin:0 auto;
+}
+
+#index div {
+	padding: 0;
+	margin: 0;
+	padding-bottom:1em;
+}
+
+#exhibit {
+	height: calc(100% - 14em);
+	padding-top: 0em;
+	margin:0;
+	width:100%;
+  position: relative;
+}
+
+#mobtab{
+	padding-left:.5em;
+}
+
+#window {
+	display:none;
+}
+
+#content{
+  width: calc(100%);
+	float:left;
+	left:0;
+  right:0;
+	margin:auto;
+	padding-top:4em;
+	border-top:1px solid #cccccc;
+}
+
+}
+
+
+#spacer{
+  padding: 2em 15px;
+}
+#spacer1{
+  padding: 0em 15px 1em 15px;
+}
+#spacer1 div {
+  width:calc(100%-30px);
+  height:1px;
+  border-top:1px solid #cccccc;
+}
+
+#spacer div {
+  width:calc(100%-30px);
+  height:1px;
+  border-top:1px solid #cccccc;
+}
+
+/*images boxes*/
+#w1{
+  width:100%;
+  margin:15px 0;
+}
+#w2{
+  width:100%;
+  margin: 0 0 3em 0;
+}
+
+/* Index formatting */
+#index  div {
+	margin-top:1em;
+}
+
+/*page display*/
+/*cover fits in exhibit div*/
+
+/*content sits in bigbox*/
+
+#content div{
+	padding-bottom: 2em;
+}
+#content img {
+	width: 100%;
+}
+#textbox{
+	margin:15px;
+}
+
+#aboutbox{
+  max-width: 350px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#aboutbox p {
+  font-size: 14px;
+}
+
+#aboutbox a {
+  cursor: pointer;
+}
+
+#gfyitem{padding: 0 1em;}
+
+#gfybig{
+	position:relative;
+	padding-top:3em;
+	right:0%;
+	width:100%;
+}
+
+#underlined {
+	text-decoration:underline;
+}
+
+#footer{
+  padding-top:1em;
+  padding-bottom:3em;
+}
+
+#footer p {
+  font-size: 12px;
+  line-height:1.4em;
+  padding-left:8px;
+  color: #999999;
+  float:left;
+}
+
+@media (min-width: 550px) {
+  #aboutbox {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
